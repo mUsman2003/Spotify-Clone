@@ -1,31 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
     background-color: black;
     color: white;
 }
-.left{
+
+.left {
     width: 25vw;
     padding: 1px;
 }
 
-.right{
+.right {
     width: 75vw;
 }
 
-.border{
+.border {
     border: 1px solid white;
     margin: 10px;
 }
 
-.home ul li{
+.home ul li {
     display: flex;
     width: 13px;
     list-style: none;
@@ -34,10 +35,12 @@ body{
     padding-top: 10px;
     font-weight: bold;
 }
-.heading img{
+
+.heading img {
     width: 16px;
 }
-.heading{
+
+.heading {
     display: flex;
     gap: 15px;
     width: 100%;
@@ -45,35 +48,115 @@ body{
     padding-top: 10px;
     font-weight: bold;
     align-items: center;
-    
+
 }
 
-.library{
+.library {
     min-height: 80vh;
     position: relative;
 
 }
 
-.footer{
+.footer {
     display: flex;
     font-size: 10px;
     gap: 10px;
     position: absolute;
     bottom: 0;
+    padding: 10px;
 }
 
-.right{
+.right {
     margin: 5px 0px;
 }
-.footer a{
-color: grey;
+
+.footer a {
+    color: grey;    
+    flex-wrap: wrap;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(31, 30, 30);
+    border-radius: 7px;
 }
 
-.header > *{
+.header>* {
     padding: 20px;
+}
+
+.spotifyplaylists {
+    padding: 10px 15px;
+}
+
+.card {
+    width: 200px;
+    padding: 0px 10px;
+    background-color: rgb(27, 27, 27);
+    position: relative;
+
+}
+
+.card>* {
+    padding-top: 10px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.cardcontainer {
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 25px;
+    max-height: 10vh;
+}
+
+.play {
+    width: 28px;
+    height: 28px;
+    background-color: #1fdf64;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+    right: 20px;
+    opacity: 1;
+    transition: all 1s ease-out;
+}
+
+.buttons > * {
+    margin: 0 12px;
+}
+.sign-btn{
+    background-color: black;
+    color: rgb(167, 166, 166);
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: rgb(31, 30, 30);
+    cursor: pointer;
+}
+.sign-btn:hover{
+    color: white;
+}
+
+.login-btn{
+    color: black;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    border-radius: 50px;
+    cursor: pointer;
+    padding:  10px 40px;
+}
+.login-btn:hover{
+    color: black;
+    font-weight: bold;
 }
