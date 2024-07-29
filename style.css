@@ -68,6 +68,7 @@ body {
 
 .right {
     margin: 5px 0px;
+    position: relative;
 }
 
 .footer a {
@@ -87,6 +88,9 @@ body {
 }
 
 .spotifyplaylists {
+    height: 500px;
+    overflow: scroll;
+    overflow-x: hidden;
     padding: 10px 15px;
 }
 
@@ -111,7 +115,7 @@ body {
     gap: 10px;
     flex-wrap: wrap;
     margin: 25px;
-    max-height: 10vh;
+    max-height: 80vh;
 }
 
 .play {
@@ -159,4 +163,69 @@ body {
 .login-btn:hover{
     color: black;
     font-weight: bold;
+}
+
+
+.playbar{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(214, 214, 214);
+    width: 90%;
+    padding: 10px;
+}
+.songbuttons{
+    gap: 20px;
+}
+
+.songList .info {
+    font-size: 16px;
+    padding-left: 100;
+   
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 20px;
+    justify-content: center;
+    flex: 1;
+    width: 180px;
+}
+.songList{
+    height: 400px;
+    overflow: scroll;
+
+    overflow-x: hidden;
+}
+.songList ul li img{
+    padding-left: 20px;
+}
+
+.songList ul{
+    padding: 5px 10px;
+}
+
+.songList ul li{
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px 0px;
+    border: 1px solid rgb(94, 94, 94);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.playnow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playnow span {
+    font-size: 15px;
+    width: 50px;
+    padding: 10px;
 }
